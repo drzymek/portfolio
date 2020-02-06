@@ -1211,10 +1211,10 @@ nav .circle span:nth-child(8) {
 
 @media only screen and (max-width: 600px) {
   #contact .icons a .fab {
-    font-size: 35px;
+    font-size: 25px;
   }
   #contact .email {
-    left: 15%;
+    left: 7%;
   }
   #contact .email p {
     font-size: 10px;
