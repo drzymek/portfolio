@@ -1,0 +1,18 @@
+footer {
+    position: absolute;
+    top: 493vh;
+    left: 0;
+    right: 0;
+    height: 7vh;
+    background-color: #1B242F;
+    // border-top: 3px solid #04C2C9;
+
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

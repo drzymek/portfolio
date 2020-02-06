@@ -1,0 +1,184 @@
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .introduce {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        h1 {
+            margin-bottom: 5vh;
+        }
+
+        img {
+            height: 30vh;
+            width: auto;
+            clip-path: polygon(25% 0, 75% 0, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
+        }
+
+        p {
+            text-align: center;
+            margin-left: 3vw;
+            padding-top: 3vh;
+            letter-spacing: 3px;
+
+
+            .aboutMovieBtn {
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                border-style: none;
+                background-color: #1B242F;
+                overflow: hidden;
+                cursor: pointer;
+                outline: none;
+                width: 30px;
+                height: 30px;
+                border-radius: 999px;
+
+                i {
+                    font-size: 1.5rem;
+                    color: white;
+                    text-shadow: 10px 0 0 white, -10px 0 0 white;
+                    animation: arrow .7s linear infinite;
+
+                }
+            }
+        }
+
+    }
+
+    .commodore {
+        position: relative;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            transform: scale(1);
+            width: 60%;
+            transition: .5s;
+        }
+
+        img.hide {
+            transform: scale(0);
+        }
+
+        p {
+            font-size: 10px;
+            transform: scale(1);
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        p.hide {
+            transform: scale(0);
+        }
+
+        iframe {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) scale(0);
+            transition: .5s;
+        }
+
+        .far {
+            position: absolute;
+            top: 15%;
+            right: 10%;
+            font-size: 2vw;
+            cursor: pointer;
+            transform: scale(0);
+            transition: .5s
+        }
+
+        .far.active {
+            transform: scale(1);
+        }
+
+        iframe.active {
+            position: absolute;
+            top: 50%;
+            width: 70%;
+            height: 70%;
+            border: none;
+            transform: translateY(-50%) scale(1);
+        }
+    }
+
+}
+
+
+
+@keyframes arrow {
+    0% {
+        transform: translateX(-330%);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(330%);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #about {
+        .introduce {
+            display: none;
+        }
+
+        .introduce.on {
+            display: flex;
+            width: 100%;
+
+            p {
+                padding: 15px;
+            }
+        }
+
+        .commodore {
+            display: none;
+        }
+
+        .commodore.on {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+
+            img {
+                display: none;
+            }
+
+            p {
+                display: none;
+            }
+
+            iframe {
+                top: 22vh;
+                width: 60%;
+                height: 70%;
+                transform: scale(1);
+            }
+
+            .far {
+                right: 15%;
+                top: 22.5%;
+                font-size: 25px;
+                transform: scale(1);
+            }
+        }
+    }
+}

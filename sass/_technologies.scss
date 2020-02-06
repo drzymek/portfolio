@@ -1,0 +1,197 @@
+#technologies {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 10vh;
+
+    }
+
+    .trianglesAndIcons {
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .leftTriangle {
+            height: 100%;
+            width: 40vw;
+            background-image: url('../img/triangle_technologies.jpg');
+            background-position: left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        }
+
+        .rightTriangle {
+            height: 100%;
+            width: 40vw;
+            background-image: url('../img/triangle_technologies.jpg');
+            background-position: right;
+            background-size: cover;
+            background-repeat: no-repeat;
+            clip-path: polygon(100% 0, 0% 50%, 100% 100%);
+        }
+
+        .technologiesIcons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 40%;
+            height: 40%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+            .fab {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                font-size: 10vh;
+
+
+            }
+        }
+    }
+}
+
+
+#technologies.active {
+
+    .fa-html5 {
+        animation: moveHtmlIcon 1s linear both;
+    }
+
+    .fa-css3-alt {
+        animation: moveCssIcon 1s .5s linear both;
+    }
+
+    .fa-js {
+        animation: moveJsIcon 1s 1s linear both;
+    }
+
+    .fa-sass {
+        animation: moveSassIcon 1s 1.5s linear both;
+    }
+
+    .fa-react {
+        animation: moveReactIcon 1s 2s linear both;
+    }
+}
+
+
+
+@keyframes moveHtmlIcon {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        top: 0;
+        left: 20%;
+        transform: translate(-50%, -50%) scale(1) rotate(720deg);
+        color: #DD4D25;
+    }
+}
+
+@keyframes moveCssIcon {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        top: 0;
+        left: 80%;
+        transform: translate(-50%, -50%) scale(1) rotate(720deg);
+        color: #2092EC;
+    }
+}
+
+@keyframes moveJsIcon {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        top: 100%;
+        left: 20%;
+        transform: translate(-50%, -50%) scale(1) rotate(720deg);
+        color: #F0DB4F;
+    }
+}
+
+@keyframes moveSassIcon {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        top: 100%;
+        left: 80%;
+        transform: translate(-50%, -50%) scale(1) rotate(720deg);
+        color: #C66395;
+    }
+}
+
+@keyframes moveReactIcon {
+    0% {
+        top: 50%;
+        left: -100%;
+        transform: translate(-50%, -50%) scale(0.3);
+        color: white;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(.3);
+        color: white;
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) rotate(720deg);
+        color: #00B7CE;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #technologies {
+        .trianglesAndIcons {
+
+
+            .leftTriangle {
+                background-position: 20%
+            }
+
+            .rightTriangle {
+                background-position: 80%;
+            }
+
+            .technologiesIcons {
+                .fab {
+                    font-size: 5vh;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 10px;
+    }
+}
