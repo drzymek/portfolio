@@ -182,3 +182,18 @@
         }
     }
 }
+
+@media only screen and (max-device-width: 640px) {
+    #about {
+        .introduce.on {
+
+            img {
+                height: 20vh;
+            }
+
+            p {
+                padding: 0;
+            }
+        }
+    }
+}
