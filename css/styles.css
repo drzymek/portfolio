@@ -606,6 +606,7 @@ nav .circle span:nth-child(8) {
   text-transform: uppercase;
   text-align: center;
   padding-top: 10vh;
+  font-size: 35px;
 }
 
 #technologies .trianglesAndIcons {
@@ -881,9 +882,9 @@ nav .circle span:nth-child(8) {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  p {
-    font-size: 10px;
+@media only screen and (max-width: 1024px) {
+  #technologies h1 {
+    font-size: 20px;
   }
 }
 
