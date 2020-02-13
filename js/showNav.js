@@ -5,13 +5,9 @@ const $navArrow = $('div.arrow');
 
 $(document).on('scroll', function () {
     const windowHeight = $(window).height();
-    // const $nav = $('.nav');
     const scrollValue = $(this).scrollTop();
-    // const $about = $('#about');
     const aboutFromTop = $about.offset().top;
     const aboutHeight = $about.height();
-    // const $navMobile = $('nav.mobile');
-    // const $navArrow = $('div.arrow');
 
     if (scrollValue > (aboutFromTop + aboutHeight / 2) - windowHeight) {
         $nav.addClass('active');
