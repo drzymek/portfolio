@@ -49,10 +49,6 @@ nav.mobile {
     display: none;
 }
 
-
-
-
-
 @keyframes navColorChange {
     0% {
         color: grey;
@@ -70,78 +66,6 @@ nav.mobile {
         color: grey;
     }
 
-}
-
-// rotating circle
-nav .circle {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-
-    span {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 1vh;
-        height: 1vh;
-        border-radius: 50%;
-        transform: rotate(0deg) translateX(-50%);
-        transform-origin: 50% 300%;
-    }
-
-    span:nth-child(1) {
-        background-color: white;
-        animation: move 2s linear infinite;
-    }
-
-    span:nth-child(2) {
-        background-color: silver;
-        animation: move 2s .25s linear infinite;
-    }
-
-    span:nth-child(3) {
-        background-color: cadetblue;
-        animation: move 2s .5s linear infinite;
-    }
-
-    span:nth-child(4) {
-        background-color: purple;
-        animation: move 2s .75s linear infinite;
-    }
-
-    span:nth-child(5) {
-        background-color: white;
-        animation: move 2s 1s linear infinite;
-    }
-
-    span:nth-child(6) {
-        background-color: silver;
-        animation: move 2s 1.25s linear infinite;
-    }
-
-    span:nth-child(7) {
-        background-color: cadetblue;
-        animation: move 2s 1.5s linear infinite;
-    }
-
-    span:nth-child(8) {
-        background-color: purple;
-        animation: move 2s 1.75s linear infinite;
-    }
-}
-
-@keyframes move {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 // show menu
