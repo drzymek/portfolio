@@ -956,17 +956,17 @@ nav .circle span:nth-child(8) {
   color: black;
 }
 
-#projects .links .projectCover:hover {
+#projects .links .projectCover.on {
   -webkit-animation: backgroundRotate 1s .2s linear;
           animation: backgroundRotate 1s .2s linear;
 }
 
-#projects .links .projectCover:hover h3 {
+#projects .links .projectCover.on h3 {
   -webkit-animation: hideTitle 1s .2s linear both;
           animation: hideTitle 1s .2s linear both;
 }
 
-#projects .links .projectCover:hover i {
+#projects .links .projectCover.on i {
   -webkit-animation: showLink 1s .2s linear both;
           animation: showLink 1s .2s linear both;
 }

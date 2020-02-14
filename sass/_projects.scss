@@ -42,7 +42,7 @@
             }
         }
 
-        .projectCover:hover {
+        .projectCover.on {
             animation: backgroundRotate 1s .2s linear;
 
 
