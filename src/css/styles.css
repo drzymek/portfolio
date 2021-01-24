@@ -205,7 +205,7 @@ nav.mobile {
 }
 
 #home {
-  background-image: url("../img/home_background.jpg");
+  background-image: url("/img/triangle_technologies.jpg");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
