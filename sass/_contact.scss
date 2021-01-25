@@ -1,126 +1,126 @@
-#contact {
-    position: relative;
+// #contact {
+//     position: relative;
 
-    .contactLeft {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        background-image: url("/img/communication.jpg");
-        background-position: right;
-        background-size: cover;
-        clip-path: polygon(0 0, 0% 100%, 100% 0);
+//     .contactLeft {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 50%;
+//         height: 100%;
+//         background-image: url("/img/communication.jpg");
+//         background-position: right;
+//         background-size: cover;
+//         clip-path: polygon(0 0, 0% 100%, 100% 0);
 
-    }
+//     }
 
-    .icons {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        display: flex;
-        justify-content: center;
+//     .icons {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         width: 100%;
+//         display: flex;
+//         justify-content: center;
 
-        a {
-            margin-left: 5%;
+//         a {
+//             margin-left: 5%;
 
-            .fab {
-                margin: 5%;
-                font-size: 75px;
-                color: #1B242F;
-            }
-        }
+//             .fab {
+//                 margin: 5%;
+//                 font-size: 75px;
+//                 color: #1B242F;
+//             }
+//         }
 
-    }
+//     }
 
-    .email {
-        position: absolute;
-        bottom: 10%;
-        left: 20%;
-        display: flex;
-        color: #000;
+//     .email {
+//         position: absolute;
+//         bottom: 10%;
+//         left: 20%;
+//         display: flex;
+//         color: #000;
 
-        i {
-            display: flex;
-            align-items: center;
-            margin-right: 5%;
-            font-size: 20px;
-        }
+//         i {
+//             display: flex;
+//             align-items: center;
+//             margin-right: 5%;
+//             font-size: 20px;
+//         }
 
-        p {
-            font-size: 20px;
-        }
-    }
+//         p {
+//             font-size: 20px;
+//         }
+//     }
 
-    .contactRight {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 50%;
-        height: 100%;
-        background-image: url("/img/communication.jpg");
-        background-position: left;
-        background-size: cover;
-        clip-path: polygon(100% 100%, 0% 100%, 100% 0);
-    }
+//     .contactRight {
+//         position: absolute;
+//         right: 0;
+//         bottom: 0;
+//         width: 50%;
+//         height: 100%;
+//         background-image: url("/img/communication.jpg");
+//         background-position: left;
+//         background-size: cover;
+//         clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+//     }
 
-    button {
-        position: absolute;
-        bottom: 10%;
-        right: 2%;
-        cursor: pointer;
-        height: 45px;
-        width: 45px;
-        border: 3px solid #1B242F;
-        background-color: #F8F8F8;
-        border-radius: 50%;
-        outline: none;
+//     button {
+//         position: absolute;
+//         bottom: 10%;
+//         right: 2%;
+//         cursor: pointer;
+//         height: 45px;
+//         width: 45px;
+//         border: 3px solid #1B242F;
+//         background-color: #F8F8F8;
+//         border-radius: 50%;
+//         outline: none;
 
-        i {
-            font-size: 30px;
-            color: #1B242F;
-        }
-    }
-}
+//         i {
+//             font-size: 30px;
+//             color: #1B242F;
+//         }
+//     }
+// }
 
-@media only screen and (max-width: 1024px) {
-    #contact {
-        .icons {
-            a {
-                .fab {
-                    font-size: 43px;
-                }
-            }
-        }
+// @media only screen and (max-width: 1024px) {
+//     #contact {
+//         .icons {
+//             a {
+//                 .fab {
+//                     font-size: 43px;
+//                 }
+//             }
+//         }
 
-        .email {
-            left: 15%;
+//         .email {
+//             left: 15%;
 
-            p {
-                font-size: 15px;
-            }
-        }
-    }
-}
+//             p {
+//                 font-size: 15px;
+//             }
+//         }
+//     }
+// }
 
-@media only screen and (max-width: 600px) {
-    #contact {
-        .icons {
-            a {
-                .fab {
-                    font-size: 25px;
-                }
-            }
-        }
+// @media only screen and (max-width: 600px) {
+//     #contact {
+//         .icons {
+//             a {
+//                 .fab {
+//                     font-size: 25px;
+//                 }
+//             }
+//         }
 
-        .email {
-            left: 7%;
+//         .email {
+//             left: 7%;
 
-            p {
-                font-size: 10px;
-            }
-        }
-    }
-}
+//             p {
+//                 font-size: 10px;
+//             }
+//         }
+//     }
+// }
