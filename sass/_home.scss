@@ -27,7 +27,8 @@
             margin-bottom: 55%;
 
             i.fab {
-                color: #fff;
+                color: #c5c5c5;
+                font-size: 15px;
             }
         }
     }
@@ -38,12 +39,13 @@
 
         p {
             padding-top: 1vh;
-            font-size: 35px;
+            font-size: 25px;
             font-weight: bold;
             color: #fff;
 
             span {
-                color: #04C2C9;
+                color: #31569b;
+                font-size: 40px;
             }
         }
 
@@ -54,13 +56,18 @@
             font-size: 25px;
             color: #fff;
             cursor: pointer;
-            border: 2px solid #fff;
+            border: 2px solid #c5c5c5;
+            border-radius: 30px;
             background-color: transparent;
 
             .fas {
                 margin-left: 20px;
             }
 
+        }
+
+        button:focus {
+            outline: none;
         }
     }
 }
