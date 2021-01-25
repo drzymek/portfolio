@@ -1,55 +1,107 @@
 #about {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    // flex-direction: column;
+    // align-items: center;
 
     .introduce {
-        width: 40%;
+        position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        width: 100%;
 
-        h1 {
-            margin-bottom: 5vh;
-        }
-
-        img {
-            height: 30vh;
-            width: auto;
-            clip-path: polygon(25% 0, 75% 0, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
-        }
-
-        p {
-            text-align: center;
-            margin-left: 3vw;
-            padding-top: 3vh;
-            letter-spacing: 3px;
-
-
-            .aboutMovieBtn {
-                margin-top: 1vh;
-                margin-bottom: 1vh;
-                border-style: none;
-                background-color: #1B242F;
-                overflow: hidden;
-                cursor: pointer;
-                outline: none;
-                width: 30px;
-                height: 30px;
-                border-radius: 999px;
-
-                i {
-                    font-size: 1.5rem;
-                    color: white;
-                    text-shadow: 10px 0 0 white, -10px 0 0 white;
-                    animation: arrow .7s linear infinite;
-
-                }
+        .introducePhoto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 10px;
+            width: 40%;
+            
+            img {
+            width: 55%;
+            height: auto;
+            margin-right: 15%;
+            z-index: 2;
+            box-shadow: 46px -43px #516189;
             }
         }
 
+        .introduceStory::before {
+            position: absolute;
+            top: 30%;
+            background-color: #c5c5c5;
+            content: "";
+            height: 1px;
+            width: 250px;
+            margin-bottom: 15px;
+        }
+
+        .introduceStory{
+            position: relative;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: flex-start;
+            width: 50%;
+            color: #3b3a3a;
+            margin-left: 5%;
+            // padding-right: 15%;
+
+                h1 {
+                   position: absolute;
+                   top: 35%;
+                   font-family: 'Josefin Sans', sans-serif;
+                   font-size: 40px;
+                   color: #31569b;
+                }
+
+                h2 {
+                    position: absolute;
+                    top: 45%;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    word-spacing: 10px;
+                    padding-right: 15%;
+                    // flex-grow: 3;
+                    // text-align: center;
+                    // margin-left: 3vw;
+                    // padding-top: 3vh;
+                    // letter-spacing: 3px;
+
+
+                // .aboutMovieBtn {
+                //     margin-top: 1vh;
+                //     margin-bottom: 1vh;
+                //     border-style: none;
+                //     background-color: #1B242F;
+                //     overflow: hidden;
+                //     cursor: pointer;
+                //     outline: none;
+                //     width: 30px;
+                //     height: 30px;
+                //     border-radius: 999px;
+
+                //     i {
+                //         font-size: 1.5rem;
+                //         color: white;
+                //         text-shadow: 10px 0 0 white, -10px 0 0 white;
+                //         animation: arrow .7s linear infinite;
+
+                //     }
+                // }
+                }
+        }
     }
+
+    
 
     .commodore {
         position: relative;
