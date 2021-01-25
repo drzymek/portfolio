@@ -392,6 +392,18 @@ nav.mobile {
   padding-right: 15%;
 }
 
+#about .introduce .introduceStory .socialAbout {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+}
+
+#about .introduce .introduceStory .socialAbout a i.fab {
+  color: #474747;
+  font-size: 25px;
+  margin-right: 1%;
+}
+
 #about .commodore {
   position: relative;
   width: 40%;

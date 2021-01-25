@@ -98,6 +98,21 @@
                 //     }
                 // }
                 }
+
+                .socialAbout {
+                    position: absolute;
+                    top: 80%;
+                    width: 100%;
+                    
+                    a {
+
+                        i.fab {
+                            color: #474747;
+                            font-size: 25px;
+                            margin-right: 1%;
+                        }
+                    }
+                }
         }
     }
 
