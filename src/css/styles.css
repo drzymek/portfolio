@@ -532,7 +532,7 @@ nav.mobile {
 #technologies .trianglesAndIcons .leftTriangle {
   height: 100%;
   width: 40vw;
-  background-image: url("../img/triangle_technologies.jpg");
+  background-image: url("/img/triangle_technologies.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -543,7 +543,7 @@ nav.mobile {
 #technologies .trianglesAndIcons .rightTriangle {
   height: 100%;
   width: 40vw;
-  background-image: url("../img/triangle_technologies.jpg");
+  background-image: url("/img/triangle_technologies.jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -878,11 +878,11 @@ nav.mobile {
 }
 
 #projects .links .project1 {
-  background-image: url("../img/project01.jpg");
+  background-image: url("/img/project01.jpg");
 }
 
 #projects .links .project2 {
-  background-image: url("../img/project02.jpg");
+  background-image: url("/img/project02.jpg");
 }
 
 #projects .links .project2 h3 {
@@ -894,19 +894,19 @@ nav.mobile {
 }
 
 #projects .links .project3 {
-  background-image: url("../img/project03.jpg");
+  background-image: url("/img/project03.jpg");
 }
 
 #projects .links .project4 {
-  background-image: url("../img/project04.jpg");
+  background-image: url("/img/project04.jpg");
 }
 
 #projects .links .project5 {
-  background-image: url("../img/project05.jpg");
+  background-image: url("/img/project05.jpg");
 }
 
 #projects .links .project6 {
-  background-image: url("../img/project06.jpg");
+  background-image: url("/img/project06.jpg");
 }
 
 @-webkit-keyframes backgroundRotate {
@@ -1025,7 +1025,7 @@ nav.mobile {
   left: 0;
   width: 50%;
   height: 100%;
-  background-image: url("../img/communication.jpg");
+  background-image: url("/img/communication.jpg");
   background-position: right;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
@@ -1088,7 +1088,7 @@ nav.mobile {
   bottom: 0;
   width: 50%;
   height: 100%;
-  background-image: url("../img/communication.jpg");
+  background-image: url("/img/communication.jpg");
   background-position: left;
   background-size: cover;
   -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0);
