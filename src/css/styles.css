@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  background-color: #F8F8F8;
+  background-color: #eeebeb;
 }
 
 section {
@@ -248,7 +248,8 @@ nav.mobile {
 }
 
 #home aside.social a i.fab {
-  color: #fff;
+  color: #c5c5c5;
+  font-size: 15px;
 }
 
 #home .homeIntroduce {
@@ -258,13 +259,14 @@ nav.mobile {
 
 #home .homeIntroduce p {
   padding-top: 1vh;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   color: #fff;
 }
 
 #home .homeIntroduce p span {
-  color: #04C2C9;
+  color: #31569b;
+  font-size: 40px;
 }
 
 #home .homeIntroduce button {
@@ -274,12 +276,17 @@ nav.mobile {
   font-size: 25px;
   color: #fff;
   cursor: pointer;
-  border: 2px solid #fff;
+  border: 2px solid #c5c5c5;
+  border-radius: 30px;
   background-color: transparent;
 }
 
 #home .homeIntroduce button .fas {
   margin-left: 20px;
+}
+
+#home .homeIntroduce button:focus {
+  outline: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -300,18 +307,21 @@ nav.mobile {
 }
 
 #about {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 #about .introduce {
-  width: 40%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#about .introduce .introducePhoto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,50 +329,66 @@ nav.mobile {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 10px;
+  width: 40%;
 }
 
-#about .introduce h1 {
-  margin-bottom: 5vh;
+#about .introduce .introducePhoto img {
+  width: 55%;
+  height: auto;
+  margin-right: 15%;
+  z-index: 2;
+  -webkit-box-shadow: 46px -43px #516189;
+          box-shadow: 46px -43px #516189;
 }
 
-#about .introduce img {
-  height: 30vh;
-  width: auto;
-  -webkit-clip-path: polygon(25% 0, 75% 0, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
-          clip-path: polygon(25% 0, 75% 0, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
+#about .introduce .introduceStory::before {
+  position: absolute;
+  top: 30%;
+  background-color: #c5c5c5;
+  content: "";
+  height: 1px;
+  width: 250px;
+  margin-bottom: 15px;
 }
 
-#about .introduce p {
-  text-align: center;
-  margin-left: 3vw;
-  padding-top: 3vh;
-  letter-spacing: 3px;
+#about .introduce .introduceStory {
+  position: relative;
+  width: 50%;
+  color: #3b3a3a;
+  margin-left: 5%;
 }
 
-#about .introduce p .aboutMovieBtn {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  border-style: none;
-  background-color: #1B242F;
-  overflow: hidden;
-  cursor: pointer;
-  outline: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 999px;
+#about .introduce .introduceStory h1 {
+  position: absolute;
+  top: 35%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  color: #31569b;
 }
 
-#about .introduce p .aboutMovieBtn i {
-  font-size: 1.5rem;
-  color: white;
-  text-shadow: 10px 0 0 white, -10px 0 0 white;
-  -webkit-animation: arrow .7s linear infinite;
-          animation: arrow .7s linear infinite;
+#about .introduce .introduceStory h2 {
+  position: absolute;
+  top: 45%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#about .introduce .introduceStory p {
+  position: absolute;
+  top: 50%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  word-spacing: 10px;
+  padding-right: 15%;
 }
 
 #about .commodore {
@@ -544,6 +570,7 @@ nav.mobile {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 85vh;
 }
 
 #technologies h1 {
@@ -551,6 +578,8 @@ nav.mobile {
   text-align: center;
   padding-top: 10vh;
   font-size: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
 }
 
 #technologies .trianglesAndIcons {
@@ -570,23 +599,27 @@ nav.mobile {
 #technologies .trianglesAndIcons .leftTriangle {
   height: 100%;
   width: 40vw;
-  background-image: url("/img/triangle_technologies.jpg");
+  background-image: url("/img/triangle_technologies(1).jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 #technologies .trianglesAndIcons .rightTriangle {
   height: 100%;
   width: 40vw;
-  background-image: url("/img/triangle_technologies.jpg");
+  background-image: url("/img/triangle_technologies(1).jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-clip-path: polygon(100% 0, 0% 50%, 100% 100%);
           clip-path: polygon(100% 0, 0% 50%, 100% 100%);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 #technologies .trianglesAndIcons .technologiesIcons {
@@ -654,7 +687,7 @@ nav.mobile {
     left: 20%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #DD4D25;
+    color: #353232;
   }
 }
 
@@ -670,7 +703,7 @@ nav.mobile {
     left: 20%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #DD4D25;
+    color: #353232;
   }
 }
 
@@ -686,7 +719,7 @@ nav.mobile {
     left: 80%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #2092EC;
+    color: #353232;
   }
 }
 
@@ -702,7 +735,7 @@ nav.mobile {
     left: 80%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #2092EC;
+    color: #353232;
   }
 }
 
@@ -718,7 +751,7 @@ nav.mobile {
     left: 20%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #F0DB4F;
+    color: #353232;
   }
 }
 
@@ -734,7 +767,7 @@ nav.mobile {
     left: 20%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #F0DB4F;
+    color: #353232;
   }
 }
 
@@ -750,7 +783,7 @@ nav.mobile {
     left: 80%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #C66395;
+    color: #353232;
   }
 }
 
@@ -766,7 +799,7 @@ nav.mobile {
     left: 80%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #C66395;
+    color: #353232;
   }
 }
 
@@ -788,7 +821,7 @@ nav.mobile {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #00B7CE;
+    color: #353232;
   }
 }
 
@@ -810,7 +843,7 @@ nav.mobile {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
             transform: translate(-50%, -50%) scale(1) rotate(720deg);
-    color: #00B7CE;
+    color: #353232;
   }
 }
 
