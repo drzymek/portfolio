@@ -563,6 +563,7 @@ nav.mobile {
 }
 
 #technologies {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,13 +572,18 @@ nav.mobile {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 85vh;
+  background-color: #f1eeee;
 }
 
 #technologies h1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 9%;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 10vh;
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
 }
@@ -598,7 +604,7 @@ nav.mobile {
 
 #technologies .trianglesAndIcons .leftTriangle {
   height: 100%;
-  width: 40vw;
+  width: 37vw;
   background-image: url("/img/triangle_technologies(1).jpg");
   background-position: left;
   background-size: cover;
@@ -611,7 +617,7 @@ nav.mobile {
 
 #technologies .trianglesAndIcons .rightTriangle {
   height: 100%;
-  width: 40vw;
+  width: 37vw;
   background-image: url("/img/triangle_technologies(1).jpg");
   background-position: right;
   background-size: cover;

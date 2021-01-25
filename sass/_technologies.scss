@@ -1,13 +1,19 @@
 #technologies {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 85vh;
+    background-color: rgb(241, 238, 238);
 
     h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 9%;
         text-transform: uppercase;
         text-align: center;
-        padding-top: 10vh;
-        font-size: 35px;
+        // padding-top: 15vh;
+        font-size: 30px;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
     }
@@ -21,7 +27,7 @@
 
         .leftTriangle {
             height: 100%;
-            width: 40vw;
+            width: 37vw;
             background-image: url('/img/triangle_technologies(1).jpg');
             background-position: left;
             background-size: cover;
@@ -32,7 +38,7 @@
 
         .rightTriangle {
             height: 100%;
-            width: 40vw;
+            width: 37vw;
             background-image: url('/img/triangle_technologies(1).jpg');
             background-position: right;
             background-size: cover;
