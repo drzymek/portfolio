@@ -1,10 +1,36 @@
 #home {
-    background-image: url("/img/triangle_technologies.jpg");
+    position: relative;
+    background-image: url("/img/home_background(1).jpg");
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    aside::before {
+        background-color: #c5c5c5;
+        content: "";
+        height: 50px;
+        width: 1px;
+        margin-bottom: 15px;
+    }
+
+    aside.social {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            margin-bottom: 55%;
+
+            i.fab {
+                color: #fff;
+            }
+        }
+    }
 
     .homeIntroduce {
         font-family: 'Raleway', sans-serif;
@@ -41,7 +67,14 @@
 
 @media only screen and (max-width: 1024px) {
     #home {
+
+        aside.social {
+            top: 75%;
+        }
+
         .homeIntroduce {
+            width: 75%;
+
             p {
                 font-size: 20px;
             }

@@ -205,7 +205,8 @@ nav.mobile {
 }
 
 #home {
-  background-image: url("/img/triangle_technologies.jpg");
+  position: relative;
+  background-image: url("/img/home_background(1).jpg");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -217,6 +218,37 @@ nav.mobile {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#home aside::before {
+  background-color: #c5c5c5;
+  content: "";
+  height: 50px;
+  width: 1px;
+  margin-bottom: 15px;
+}
+
+#home aside.social {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home aside.social a {
+  margin-bottom: 55%;
+}
+
+#home aside.social a i.fab {
+  color: #fff;
 }
 
 #home .homeIntroduce {
@@ -251,6 +283,12 @@ nav.mobile {
 }
 
 @media only screen and (max-width: 1024px) {
+  #home aside.social {
+    top: 75%;
+  }
+  #home .homeIntroduce {
+    width: 75%;
+  }
   #home .homeIntroduce p {
     font-size: 20px;
   }
