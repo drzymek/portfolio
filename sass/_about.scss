@@ -94,7 +94,65 @@
     
 /* smartphones ----------------------*/
 @media only screen and (max-device-width: 480px) {
-}  
+
+    #about {
+
+        .introduce {
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+
+            .introducePhoto {
+                position: absolute;
+                top: 7%;
+                width: 100%;
+                flex-direction: row;
+
+                img {
+                    width: 30%;
+                    z-index: 0;
+                    box-shadow: 23px -20px #516189;
+                }
+            }
+
+            .introduceStory::before {
+                top: 0;
+            }
+
+            .introduceStory {
+                position: absolute;
+                top: 35%;
+                width: 90%;
+                height: 55%;
+
+                h1 {
+                    top: 7%;
+                }
+
+                h2 {
+                    top: 20%;
+                    font-size: 23px;
+                }
+
+                p {
+                    top: 35%;
+                    font-size: 14px;
+                }
+
+                .socialAbout {
+                    top: 85%;
+
+                    a {
+                        i.fab {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
 
 /* tablets --------------------------------*/
 @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
