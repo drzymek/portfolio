@@ -133,7 +133,81 @@ nav.mobile {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+/* smartphones ----------------------*/
+@media only screen and (max-device-width: 480px) {
+  nav.nav {
+    display: none;
+  }
+  #home {
+    z-index: 2;
+  }
+  div .arrow {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #1B242F;
+    z-index: 1;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  div.arrow.on {
+    top: 200px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  nav.mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: -185px;
+    left: 0;
+    background-color: #1B242F;
+    z-index: 1;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  nav.mobile .active {
+    -webkit-animation: showNav .5s linear both;
+            animation: showNav .5s linear both;
+  }
+  nav.mobile ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav.mobile ul li {
+    color: white;
+  }
+  nav.mobile ul li a {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    width: 100vw;
+  }
+  nav.mobile ul li a:hover {
+    background-color: black;
+  }
+  nav.on {
+    top: 0;
+  }
+}
+
+/* tablets --------------------------------*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
   nav.nav {
     display: none;
   }
@@ -355,7 +429,7 @@ nav.mobile {
   background-color: #c5c5c5;
   content: "";
   height: 1px;
-  width: 250px;
+  width: 35%;
   margin-bottom: 15px;
 }
 
