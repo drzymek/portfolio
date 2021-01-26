@@ -3,7 +3,7 @@ const navHome = document.querySelector('.liHome');
 const navAboutMe = document.querySelector('.liAbout');
 const navTechnologies = document.querySelector('.liTechnologies');
 const navProjects = document.querySelector('.liProjects');
-const navContact = document.querySelector('.liContact');
+// const navContact = document.querySelector('.liContact');
 const contactArrow = document.querySelector('.contactArrow');
 
 
@@ -39,21 +39,21 @@ const scrollToProjects = () => {
     })
 }
 
-const scrollToContacts = () => {
-    const contactsFromTop = document.querySelector('#contact').offsetTop;
-    window.scroll({
-        top: contactsFromTop,
-        behavior: 'smooth'
-    })
-}
+// const scrollToContacts = () => {
+//     const contactsFromTop = document.querySelector('#contact').offsetTop;
+//     window.scroll({
+//         top: contactsFromTop,
+//         behavior: 'smooth'
+//     })
+// }
 
 btnSeeMore.addEventListener('click', scrollToAbout);
 navHome.addEventListener('click', scrollToHome);
 navAboutMe.addEventListener('click', scrollToAbout);
 navTechnologies.addEventListener('click', scrollToTechnologies);
 navProjects.addEventListener('click', scrollToProjects);
-navContact.addEventListener('click', scrollToContacts);
-contactArrow.addEventListener('click', scrollToHome);
+// navContact.addEventListener('click', scrollToContacts);
+// contactArrow.addEventListener('click', scrollToHome);
 
 
 // mobile 
@@ -63,7 +63,7 @@ const navHomeMobile = document.querySelector('.liHomeMobile');
 const navAboutMeMobile = document.querySelector('.liAboutMobile');
 const navTechnologiesMobile = document.querySelector('.liTechnologiesMobile');
 const navProjectsMobile = document.querySelector('.liProjectsMobile');
-const navContactMobile = document.querySelector('.liContactMobile');
+// const navContactMobile = document.querySelector('.liContactMobile');
 
 const scrollToAboutMobile = () => {
     navArrow.classList.remove('on');
@@ -89,14 +89,14 @@ const scrollToProjectsMobile = () => {
     scrollToProjects();
 }
 
-const scrollToContactMobile = () => {
-    navArrow.classList.remove('on');
-    navMobile.classList.remove('on');
-    scrollToContacts();
-}
+// const scrollToContactMobile = () => {
+//     navArrow.classList.remove('on');
+//     navMobile.classList.remove('on');
+//     scrollToContacts();
+// }
 
 navAboutMeMobile.addEventListener('click', scrollToAboutMobile);
 navHomeMobile.addEventListener('click', scrollToHomeMobile);
 navTechnologiesMobile.addEventListener('click', scrollToTechnologiesMobile);
 navProjectsMobile.addEventListener('click', scrollToProjectsMobile);
-navContactMobile.addEventListener('click', scrollToContactMobile);
+// navContactMobile.addEventListener('click', scrollToContactMobile);
