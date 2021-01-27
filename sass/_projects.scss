@@ -5,11 +5,14 @@
     justify-content: center;
 
     h1 {
-        margin-top: 10vh;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
         text-transform: uppercase;
+        margin-bottom: 5%;
     }
 
     .links {
+        position: relative;
         width: 70%;
         height: 40%;
         display: flex;
@@ -28,17 +31,35 @@
             cursor: pointer;
 
             h3 {
-                color: black;
+                font-size: 18px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #f1e9e9;
                 transform: scale(1);
             }
 
             i {
                 position: absolute;
-                top: 50%;
+                color: #f1e9e9;
+                font-weight: 600;
+                transform: translateX(-50%) scale(0) rotate(0);
+                font-size: 30px;
+
+                a {
+                    padding-left: 5%;
+                    text-decoration: none;
+                    color: #f1e9e9;
+                }
+            }
+
+            i.fa-code {
+                top: 57px;
                 left: 50%;
-                transform: translate(-50%, -50%) scale(0) rotate(0);
-                font-size: 65px;
-                color: black;
+            }
+
+            i.fa-github {
+                top: 110px;
+                left: 50%;
             }
         }
 
@@ -60,7 +81,7 @@
 
 
         .project1 {
-            background-image: url("../../img/project01.jpg");
+            background-image: url("../../img/home_background(1).jpg");
         }
 
 
@@ -93,6 +114,15 @@
         }
 
 
+    }
+
+    .links::after {
+        position: absolute;
+        bottom: -20px;
+        background-color: #000;
+        content: "";
+        height: 1px;
+        width: 48%;
     }
 }
 
@@ -141,7 +171,7 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
     #projects {
         h1 {
@@ -152,6 +182,22 @@
         .links {
             .projectCover {
                 height: 40%;
+
+                h3 {
+                    font-size: .5em;
+                }
+
+                i {
+                    font-size: .75em;
+                }
+
+                i.fa-code {
+                    top: 40px;
+                }
+
+                i.fa-github {
+                    top: 65px
+                }
             }
         }
     }
@@ -159,7 +205,7 @@
 
 }
 
-@media only screen and (max-width: 1024px) and (min-width:601px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
     #projects {
         .links {
             .projectCover {

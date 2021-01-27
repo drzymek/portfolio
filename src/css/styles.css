@@ -861,11 +861,14 @@ nav.mobile {
 }
 
 #projects h1 {
-  margin-top: 10vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
+  margin-bottom: 5%;
 }
 
 #projects .links {
+  position: relative;
   width: 70%;
   height: 40%;
   display: -webkit-box;
@@ -897,19 +900,37 @@ nav.mobile {
 }
 
 #projects .links .projectCover h3 {
-  color: black;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #f1e9e9;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
 #projects .links .projectCover i {
   position: absolute;
-  top: 50%;
+  color: #f1e9e9;
+  font-weight: 600;
+  -webkit-transform: translateX(-50%) scale(0) rotate(0);
+          transform: translateX(-50%) scale(0) rotate(0);
+  font-size: 30px;
+}
+
+#projects .links .projectCover i a {
+  padding-left: 5%;
+  text-decoration: none;
+  color: #f1e9e9;
+}
+
+#projects .links .projectCover i.fa-code {
+  top: 57px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0) rotate(0);
-          transform: translate(-50%, -50%) scale(0) rotate(0);
-  font-size: 65px;
-  color: black;
+}
+
+#projects .links .projectCover i.fa-github {
+  top: 110px;
+  left: 50%;
 }
 
 #projects .links .projectCover.on {
@@ -928,7 +949,7 @@ nav.mobile {
 }
 
 #projects .links .project1 {
-  background-image: url("../../img/project01.jpg");
+  background-image: url("../../img/home_background(1).jpg");
 }
 
 #projects .links .project2 {
@@ -957,6 +978,15 @@ nav.mobile {
 
 #projects .links .project6 {
   background-image: url("../../img/project06.jpg");
+}
+
+#projects .links::after {
+  position: absolute;
+  bottom: -20px;
+  background-color: #000;
+  content: "";
+  height: 1px;
+  width: 48%;
 }
 
 @-webkit-keyframes backgroundRotate {
@@ -1049,7 +1079,7 @@ nav.mobile {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #projects h1 {
     font-size: 16px;
     text-align: center;
@@ -1057,9 +1087,21 @@ nav.mobile {
   #projects .links .projectCover {
     height: 40%;
   }
+  #projects .links .projectCover h3 {
+    font-size: .5em;
+  }
+  #projects .links .projectCover i {
+    font-size: .75em;
+  }
+  #projects .links .projectCover i.fa-code {
+    top: 40px;
+  }
+  #projects .links .projectCover i.fa-github {
+    top: 65px;
+  }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 601px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
   #projects .links .projectCover {
     height: 50%;
   }
