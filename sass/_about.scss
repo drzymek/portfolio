@@ -156,4 +156,55 @@
 
 /* tablets --------------------------------*/
 @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+
+    #about {
+        
+        .introduce {
+
+            .introducePhoto {
+                width: 35%;
+
+                img {
+                    width: 50%;
+                    box-shadow: 35px -30px #516189;
+                }
+            }
+
+            .introduceStory::before {
+                top: 10%
+            }
+
+            .introduceStory {
+
+                h1 {
+                    top: 15%;
+                    font-size: 32px;
+
+                }
+
+                h2 {
+                    top: 25%;
+                    font-size: 20px;
+                }
+
+                p {
+                    top: 36%;
+                    padding-right: 0;
+                    font-size: 15px;
+                }
+
+                .socialAbout {
+                    top: 90%;
+
+                    a {
+
+                        i.fab {
+                            font-size: 17px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }

@@ -542,6 +542,39 @@ nav.mobile {
 }
 
 /* tablets --------------------------------*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  #about .introduce .introducePhoto {
+    width: 35%;
+  }
+  #about .introduce .introducePhoto img {
+    width: 50%;
+    -webkit-box-shadow: 35px -30px #516189;
+            box-shadow: 35px -30px #516189;
+  }
+  #about .introduce .introduceStory::before {
+    top: 10%;
+  }
+  #about .introduce .introduceStory h1 {
+    top: 15%;
+    font-size: 32px;
+  }
+  #about .introduce .introduceStory h2 {
+    top: 25%;
+    font-size: 20px;
+  }
+  #about .introduce .introduceStory p {
+    top: 36%;
+    padding-right: 0;
+    font-size: 15px;
+  }
+  #about .introduce .introduceStory .socialAbout {
+    top: 90%;
+  }
+  #about .introduce .introduceStory .socialAbout a i.fab {
+    font-size: 17px;
+  }
+}
+
 #technologies {
   position: relative;
   display: -webkit-box;
