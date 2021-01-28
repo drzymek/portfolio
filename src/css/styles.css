@@ -364,7 +364,8 @@ nav.mobile {
   outline: none;
 }
 
-@media only screen and (max-width: 1024px) {
+/* smartphones ----------------------*/
+@media only screen and (max-device-width: 480px) {
   #home aside.social {
     top: 80%;
     left: 5%;
@@ -379,6 +380,12 @@ nav.mobile {
     font-size: 15px;
     border: 1px solid white;
     outline: none;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  #home aside.social {
+    top: 70%;
   }
 }
 
