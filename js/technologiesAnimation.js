@@ -5,7 +5,7 @@ $(document).on('scroll', function () {
     const technologiesFromTop = $technologies.offset().top;
     const technologiesHeight = $technologies.outerHeight();
 
-    if (scrollValue > technologiesFromTop + technologiesHeight - windowHeight - 20) {
+    if (scrollValue > technologiesFromTop + technologiesHeight - windowHeight - 500) {
         $technologies.addClass('active');
     }
 
