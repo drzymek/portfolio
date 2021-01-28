@@ -28,7 +28,7 @@
 
         .introduceStory::before {
             position: absolute;
-            top: 30%;
+            top: 20%;
             background-color: #c5c5c5;
             content: "";
             height: 1px;
@@ -38,33 +38,32 @@
 
         .introduceStory{
             position: relative;
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
             width: 50%;
             color: #3b3a3a;
             margin-left: 5%;
-            // padding-right: 15%;
 
                 h1 {
-                   position: absolute;
-                   top: 35%;
-                   font-family: 'Josefin Sans', sans-serif;
-                   font-size: 40px;
-                   color: #31569b;
+                    flex-grow: 6;
+                    justify-self: flex-end;
+                    display: flex;
+                    align-items: flex-end;
+                    top: 35%;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 40px;
+                    color: #31569b;
                 }
 
                 h2 {
-                    position: absolute;
-                    top: 45%;
+                    flex-grow: 1;
                     font-family: 'Josefin Sans', sans-serif;
                     font-size: 25px;
                     font-weight: 500;
                 }
 
                 p {
-                    position: absolute;
-                    top: 50%;
+                    flex-grow: 1;
                     font-family: 'Josefin Sans', sans-serif;
                     font-size: 18px;
                     font-weight: 300;
@@ -73,8 +72,7 @@
                 }
 
                 .socialAbout {
-                    position: absolute;
-                    top: 80%;
+                    flex-grow: 8;
                     width: 100%;
                     
                     a {
