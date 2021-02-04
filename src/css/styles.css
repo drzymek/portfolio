@@ -73,10 +73,6 @@ div.arrow {
   display: none;
 }
 
-div.burger {
-  display: none;
-}
-
 nav.mobile {
   display: none;
 }
@@ -1012,7 +1008,7 @@ nav.mobile {
 }
 
 #projects .links .project2 {
-  background-image: url("../../img/project02.jpg");
+  background-image: url("../../img/home_background(1).jpg");
 }
 
 #projects .links .project3 {
