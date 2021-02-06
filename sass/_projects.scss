@@ -98,7 +98,16 @@
         }
 
         .project3 {
-            background-image: url("../../img/project03.jpg");
+            background-image: url("../../img/home_background(1).jpg");
+            position: relative;
+            overflow: hidden;
+
+            h3 {
+                position: absolute;
+                right: -65%;
+                width: 100%;
+                animation: moveInProgress 5s linear infinite;
+            }
         }
 
         // .project4 {
@@ -165,6 +174,16 @@
 
     100% {
         transform: scale(0);
+    }
+}
+
+@keyframes moveInProgress {
+    0% {
+        right: -65%
+    }
+
+    100% {
+        right: 100%;
     }
 }
 
