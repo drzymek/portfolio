@@ -25,6 +25,8 @@ section {
           flex-direction: column;
 }
 
+/* small screens ----------------------*/
+/* medium screens --------------------------*/
 nav.nav {
   background-color: #000;
   opacity: .6;
@@ -129,7 +131,6 @@ nav.mobile {
   }
 }
 
-/* smartphones ----------------------*/
 @media only screen and (max-device-width: 480px) {
   nav.nav {
     display: none;
@@ -202,8 +203,7 @@ nav.mobile {
   }
 }
 
-/* tablets --------------------------------*/
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) {
   nav.nav {
     display: none;
   }
@@ -275,6 +275,8 @@ nav.mobile {
   }
 }
 
+/* small screens ----------------------*/
+/* medium screens --------------------------*/
 #home {
   position: relative;
   background-image: url("../../img/home_background(1).jpg");
@@ -360,7 +362,6 @@ nav.mobile {
   outline: none;
 }
 
-/* smartphones ----------------------*/
 @media only screen and (max-device-width: 480px) {
   #home aside.social {
     top: 80%;
@@ -379,12 +380,14 @@ nav.mobile {
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) {
   #home aside.social {
     top: 70%;
   }
 }
 
+/* small screens ----------------------*/
+/* medium screens --------------------------*/
 #about {
   position: relative;
   display: -webkit-box;
@@ -429,7 +432,7 @@ nav.mobile {
 
 #about .introduce .introduceStory::before {
   position: absolute;
-  top: 20%;
+  top: 15%;
   background-color: #c5c5c5;
   content: "";
   height: 1px;
@@ -447,7 +450,7 @@ nav.mobile {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  color: #3b3a3a;
+  color: #000;
   margin-left: 5%;
 }
 
@@ -486,6 +489,28 @@ nav.mobile {
   font-weight: 300;
   line-height: 1.3em;
   padding-right: 15%;
+}
+
+#about .introduce .introduceStory .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .introduce .introduceStory .contact button {
+  width: 20%;
+  padding: 5px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  background-color: #31569b;
+  border: none;
+  outline: none;
+}
+
+#about .introduce .introduceStory .contact button a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 #about .introduce .introduceStory .socialAbout {
@@ -534,8 +559,9 @@ nav.mobile {
   #about .introduce .introduceStory {
     position: absolute;
     top: 35%;
-    width: 90%;
+    width: 100%;
     height: 55%;
+    padding-left: 5px;
   }
   #about .introduce .introduceStory h1 {
     top: 7%;
@@ -548,6 +574,12 @@ nav.mobile {
     top: 35%;
     font-size: 14px;
   }
+  #about .introduce .introduceStory .contact {
+    margin-top: 10px;
+  }
+  #about .introduce .introduceStory .contact button {
+    width: 30%;
+  }
   #about .introduce .introduceStory .socialAbout {
     top: 85%;
   }
@@ -557,7 +589,7 @@ nav.mobile {
 }
 
 /* tablets --------------------------------*/
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) {
   #about .introduce .introducePhoto {
     width: 35%;
   }
@@ -581,6 +613,13 @@ nav.mobile {
     top: 36%;
     padding-right: 0;
     font-size: 15px;
+  }
+  #about .introduce .introduceStory .contact {
+    margin-top: 5px;
+  }
+  #about .introduce .introduceStory .contact button {
+    margin-right: 10px;
+    width: 33%;
   }
   #about .introduce .introduceStory .socialAbout {
     top: 90%;
@@ -882,6 +921,9 @@ nav.mobile {
 }
 
 @media only screen and (max-width: 1024px) {
+  #technologies h1 {
+    font-size: 20px;
+  }
   #technologies .trianglesAndIcons .leftTriangle {
     background-position: 20%;
   }
@@ -893,12 +935,8 @@ nav.mobile {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  #technologies h1 {
-    font-size: 20px;
-  }
-}
-
+/* small screens ----------------------*/
+/* medium screens --------------------------*/
 #projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,8 +976,8 @@ nav.mobile {
 
 #projects .links .projectCover {
   position: relative;
-  width: 25%;
-  height: 80%;
+  width: 20%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,8 +1180,7 @@ nav.mobile {
   }
 }
 
-/* smartphones ----------------------*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
   #projects {
     height: 70vh;
   }
@@ -1158,7 +1195,7 @@ nav.mobile {
     height: 40%;
   }
   #projects .links .projectCover h3 {
-    font-size: .5em;
+    font-size: .3em;
   }
   #projects .links .projectCover i {
     font-size: .75em;
@@ -1171,8 +1208,7 @@ nav.mobile {
   }
 }
 
-/* tablets --------------------------------*/
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) {
   #projects {
     width: 90%;
     margin-left: 5%;
@@ -1182,7 +1218,7 @@ nav.mobile {
     height: 55%;
   }
   #projects .links .projectCover {
-    height: 60%;
+    height: 30%;
   }
   #projects .links .projectCover h3 {
     font-size: .5em;
@@ -1198,6 +1234,8 @@ nav.mobile {
   }
 }
 
+/* small screens ----------------------*/
+/* medium screens --------------------------*/
 footer {
   position: absolute;
   left: 0;
@@ -1217,7 +1255,7 @@ footer p {
 }
 
 /* smartphones ----------------------*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
   footer p {
     font-size: 12px;
   }

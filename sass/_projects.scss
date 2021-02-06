@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 #projects {
     display: flex;
     flex-direction: column;
@@ -21,8 +23,8 @@
 
         .projectCover {
             position: relative;
-            width: 25%;
-            height: 80%;
+            width: 20%;
+            height: 60%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -189,8 +191,7 @@
 
 
 
-/* smartphones ----------------------*/
-@media only screen and (max-width: 480px) {
+@include for-smallScreens {
 
     #projects {
         height: 70vh;
@@ -207,7 +208,7 @@
                 height: 40%;
 
                 h3 {
-                    font-size: .5em;
+                    font-size: .3em;
                 }
 
                 i {
@@ -228,8 +229,7 @@
 
 }
 
-/* tablets --------------------------------*/
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+@include for-mediumScreens {
     #projects {
         width: 90%;
         margin-left: 5%;
@@ -239,7 +239,7 @@
             height: 55%;
         
             .projectCover {
-                height: 60%;
+                height: 30%;
 
                 h3 {
                     font-size: .5em;
