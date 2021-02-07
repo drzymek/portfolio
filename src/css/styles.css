@@ -1051,11 +1051,15 @@ nav.mobile {
 
 #projects .links .project3 {
   background-image: url("../../img/home_background(1).jpg");
+}
+
+#projects .links .project4 {
+  background-image: url("../../img/home_background(1).jpg");
   position: relative;
   overflow: hidden;
 }
 
-#projects .links .project3 h3 {
+#projects .links .project4 h3 {
   position: absolute;
   right: -65%;
   width: 100%;
